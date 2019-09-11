@@ -38,7 +38,7 @@ public class TestWelcome {
     public void testWelcome() throws Exception {
 
         this.mockMvc.perform(
-                get("/"))
+                get("/index"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"))
